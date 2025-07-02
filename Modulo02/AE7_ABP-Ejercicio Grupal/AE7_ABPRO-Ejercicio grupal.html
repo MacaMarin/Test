@@ -1,0 +1,112 @@
+<!-- EJERCICIO GRUPAL 7 -->
+
+<!-- Integrantes:
+ 1. Claudia
+ 2. Macarena Marin
+ 3. Maria Eugenia Martinez-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoFix - Reparación de Vehículos a Domicilio</title>
+  <link rel="stylesheet" href="AE7_ABPRO-Ejercicio grupal.css" />
+</head>
+<body>
+
+  <!-- Título de la página -->
+  <h1>AutoFix - Reparación de Vehículos a Domicilio</h1>
+
+  <!-- Sección Servicios y Precios -->
+  <h2>Servicios y Precios</h2>
+  <section class="servicios">
+
+    <!-- Imagen para cambio de aceite -->
+    <div class="card">
+      <img src="ImagenCambioDeAceite.png" alt="Cambio de aceite" />
+      <h4>Cambio de aceite</h4>
+      <p>Precio: $500 MXN</p>
+    </div>
+
+    <!-- Imagen para revision de frenos -->
+    <div class="card">
+      <img src="ImagenRevisionDeFrenos.webp" alt="Revisión de frenos" />
+      <h4>Revisión de frenos</h4>
+      <p>Precio: $700 MXN</p>
+    </div>
+
+    <!-- Imagen para diagnostico electrico -->
+    <div class="card">
+      <img src="ImagenDiagnosticoElectrico.png" alt="Diagnóstico eléctrico" />
+      <h4>Diagnóstico eléctrico</h4>
+      <p>Precio: $600 MXN</p>
+    </div>
+  </section>
+
+
+  <!-- Formulario para solicitar reparación -->
+  <section class="formulario">
+
+    <!-- Seccion para solicitar reparacion -->
+    <h2>Solicitar Reparación</h2>
+
+    <!--Formulario -->
+    <form>
+
+      <!--Nombre -->
+      <label for="nombre">Nombre del Cliente</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <!-- Tipo de reparacion -->
+      <label for="tipo">Tipo de Reparación</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Selecciona un servicio</option>
+        <option value="aceite">Cambio de aceite</option>
+        <option value="frenos">Revisión de frenos</option>
+        <option value="diagnostico">Diagnóstico eléctrico</option>
+      </select>
+
+      <!-- Descripcion de la reparacion --> 
+      <label for="descripcion">Descripción de la reparación</label>
+      <textarea id="descripcion" name="descripcion"></textarea>
+
+      <!-- Fecha de la cita para la reparación-->
+      <label for="fecha">Agendar Cita</label>
+      <input type="datetime-local" id="fecha" name="fecha" required />
+
+      <!-- Informacion de pago-->
+      <h4>Información de Pago </h4>
+      <label for="tarjeta">Número de tarjeta</label>
+      <input type="text" id="tarjeta" name="tarjeta" placeholder="**** **** **** 1234"/>
+
+      <!--Nombre del titular de la tarjeta -->
+      <label for="titular">Nombre del titular</label>
+      <input type="text" id="titular" name="titular" />
+
+      <!-- Clave secreta -->
+      <label for="cvv">CVV</label>
+      <input type="number" id="cvv" name="cvv" />
+
+      <!-- Boton para confirmar -->
+      <button type="submit">Confirmar Solicitud</button>
+
+    </form>
+  </section>
+
+  <!--Modal para registro existoso-->
+  <div id="modalexitoso" class="modal">
+    <div class="modal-contenido"> 
+      <span class="cierra-button">&times;</span>
+      <h2>¡Registro Exitoso!</h2>
+      <p>Tu solicitud de reparación ha sido enviada con éxito. Nos pondremos en contacto contigo pronto.</p>
+    </div>
+  </div>  
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="AE7_ABPRO-Ejercicio grupal.js"></script>
+
+
+</body>
+</html>

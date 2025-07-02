@@ -1,0 +1,74 @@
+/* ACTIVIDAD INDIVIDUAL 6 MODULO 2 */
+
+/* Reiniciamos el CSS */
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+
+/* BODY */
+body{
+    font-family: sans-serif; /* Tipo de fuente*/
+    text-align: center;  /* Centramos todo lo que esta en body*/
+}
+
+/* H1 */
+h1{
+    margin: 20px;  /* Margen arriba y abajo de 20 e izquierda y derecha de 0 */
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 1000px;        /* Limita el ancho máximo */
+    align-items: center;      /* Centra verticalmente las imágenes */
+}
+
+
+.thumb {
+    width: 150px;
+    height: auto;        /* Mantiene la proporción */
+    cursor: pointer;
+}
+
+.modal {
+    display: none;               /* Oculto inicialmente */
+    position: fixed;             /* Queda fijo sobre toda la ventana */
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.imagen_modal {
+    max-width: 90%;
+    max-height: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+
+}
+
+.modal-nav button {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+

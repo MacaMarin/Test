@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Recetario</title>
+  <link rel="stylesheet" href="xxx.css">
+</head>
+<body>
+
+
+  <header>
+    <h1> El Recetario de Macarena </h1>
+    <nav>
+     <a href="#">Inicio</a>
+     <a href="#">Buscar recetas</a>
+     <a href="#">Contacto</a>
+     <a href="#">Acerca de</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="buscar-recetas">
+      <h2>Buscar recetas</h2>
+      <p>Recetas por horario: desayuno, almuerzo, once, cena o snacks.</p>
+      <p>Filtra por cantidad de personas y conoce el valor calórico por porción.</p>
+    </section>
+
+    <section class="receta">
+      <h3>Panqueques de avena</h3>
+      <img src="https://via.placeholder.com/300x200" alt="Panqueques de avena">
+      <p><strong>Personas:</strong> 2</p>
+      <p><strong>Calorías por persona:</strong> 250 kcal</p>
+
+      <h4>Ingredientes:</h4>
+      <ul>
+        <li><input type="checkbox"> 1 taza de avena</li>
+        <li><input type="checkbox"> 1 plátano</li>
+        <li><input type="checkbox"> 1 huevo</li>
+        <li><input type="checkbox"> 1/2 taza de leche</li>
+      </ul>
+
+      <h4>Pasos:</h4>
+      <ol>
+        <li>Tritura el plátano y mezcla con los demás ingredientes.</li>
+        <li>Calienta una sartén y vierte porciones pequeñas.</li>
+        <li>Cocina por ambos lados hasta dorar.</li>
+      </ol>
+    </section>
+
+    <!-- Formulario para sugerir recetas -->
+    <section class="formulario">
+      <h3>Sugiere una receta</h3>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="celular">Celular:</label><br>
+        <input type="tel" id="celular" name="celular" required><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="receta">Receta que deseas agregar:</label><br>
+        <textarea id="receta" name="receta" rows="4" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de pagina -->
+  <footer>
+    <p>© Macarena Marín - 2025</p>
+  </footer>
+</body>
+</html>
+

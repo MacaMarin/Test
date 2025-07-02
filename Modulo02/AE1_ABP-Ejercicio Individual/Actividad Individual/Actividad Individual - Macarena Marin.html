@@ -1,0 +1,94 @@
+<!-- ACTIVIDAD INDIVIUAL - Macarena Marin -->
+
+
+<!-- La declaración indica al navegador que usaremos html5 -->
+<!doctype html>
+
+<!-- inicio del documento html -->
+<html>
+
+<!-- Título que aparece en la pestaña del navegador -->
+<head>
+    <title> Formulario de Registro</title>
+</head>
+
+<!-- BODY (Contenido visible en la página) -->
+<body>
+
+    <!-- Titulo de la pagina-->
+    <h1>Formulario de Registro</h1> 
+
+
+
+    <!-- Formulario de la pagina -->
+    <form>
+
+        <!-- Campo para el nombre -->
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+        
+        <!-- Campo para el apellido -->
+        <br>
+        <label for="Apellidos">Apellidos:</label>
+        <input type="text" id="Apellidos" name="Apellidos" placeholder="Escribe tus apellidos">
+        
+
+        <!-- Campo para el correo -->
+        <br>
+        <label for="Correo">Correo electronico:</label>
+        <input type="text" id="Apellidos" name="Apellidos">
+
+        <!-- Campo para la contraseña -->
+        <br>
+        <label for="password">Clave:</label>
+        <input type="password" id="password" name="password" placeholder="escribe tu contrasena">
+        
+        <!-- Campo para la fecha de nacimiento -->       
+        <br>
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+       
+       
+        <!-- Campo para el sexo -->             
+        <br>
+        <label>Genero:</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="prefiero no decirlo" name="genero" value="Prefiero no decirlo">
+        <label for="prefiero no decirlo">Prefiero no decirlo</label>
+        <br>
+
+
+
+        <!-- Campo de intereses con checkbox -->
+        <br>
+        <label>Interes:</label>
+        <input type="checkbox" id="Deporte" name="Interes" value="Deporte">
+        <label for="Deporte">Deporte</label>
+        <input type="checkbox" id="Musica" name="Interes" value="Musica">
+        <label for="Musica">Musica</label>
+        <input type="checkbox" id="Arte" name="Interes" value="Arte">
+        <label for="Arte">Arte</label>
+        
+        
+        <!-- Campo para escribir -->
+        <br>
+        <label for="Comentarios">Cuentanos sobre ti:</label>
+        <br>
+        <textarea id="Comentarios" name="Comentarios" rows="4" cols="30" placeholder="Yo soy una persona..."></textarea>
+
+
+        <!-- Boton para enviar formulario -->
+        <br>
+        <input type="submit" value="Regristarse">
+
+    <!-- Cierre del formulario -->
+    </form>
+
+<!-- Cierre del contenido de la pagina -->
+</body>
+
+<!-- Fin del documento html -->
+</html>

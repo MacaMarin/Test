@@ -1,0 +1,189 @@
+/* ACTIVIDAD INDIVIDUAL 5 */
+
+/* HEADER */
+
+/* Header del perfil*/
+.perfil {
+  background-color: #283e4a;  /* Fondo */
+  color: white;               /* Texto */
+  text-align: left;         /* Texto a la izquierda */
+  padding: 10px;              /* Espacio interior */
+  display: flex;               /* Poner título y enlaces en línea */
+  justify-content: space-between; /* Separarlos a extremos */
+  align-items: center;         /* Alinear verticalmente */
+}
+
+/* Estilo para cada enlace */
+.perfil_enlaces a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+/* Estilo para el boton */
+.logout-button {
+  background-color: #0073b1; 
+  color: white;              /* Texto blanco */
+  padding: 5px 10px;         /* Espacio interno */
+}
+
+
+/* PERFIL */
+/* Foto de perfil */
+.foto-perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;      
+  object-fit: cover;       /* Para que no se deforme */
+  margin-bottom: 15px;
+}
+
+.perfil-minnie{
+  background: #f9f9f9;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 900px;
+}
+
+.perfil-minnie h2 {
+  font-size: 24px;
+  color: #292727;
+  margin-top: 10px;
+}
+
+.perfil-minnie p {
+  color: #292727;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.descripcion {
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+
+
+/* INVITACIONES */
+.invitaciones {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  width: 330px;                 /* Ancho fijo */
+  float: right;                 /* Lo manda a la derecha */
+  margin: -415px 0px 20px 20px;  /* margen: top-right-bottom-left */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.invitaciones h3 {
+  color: #292727;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+
+/* Cada tarjeta de invitación */
+.invitacion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+/* Imagen de invitación  */
+.imagen {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 2px solid white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Nombre del personaje */
+.invitacion p {
+  color: #292727;
+  margin: 0;
+  flex: 1;
+}
+
+/* Boton aceptar y rechazar horizontal */
+.acciones {
+  display: flex;
+}
+
+.acciones p {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid;
+  transition: 0.3s;
+}
+
+
+/* EDUCACION */
+.educacion {
+  background: #f9f9f9;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 900px;
+}
+
+
+
+/* EDUCACION */
+.conexiones {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  width: 330px;
+  float: right;
+  margin: -45px 0px 20px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conexiones h3 {
+  color: #292727;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+
+/* Cada conexión individual */
+.conexion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.conexion:last-child {
+  margin-bottom: 0;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 2px solid white;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+.conexion p {
+  margin: 0;
+  color: #292727;
+}
+
+
+
+
+
+
+

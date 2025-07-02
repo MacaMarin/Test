@@ -1,0 +1,42 @@
+<!-- ACTIVIDAD INDIVIDUAL 6 MODULO 2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imagenes</title>
+    <link rel="stylesheet" href="AE6_ABP-EjercicioIndividual.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script></head>
+
+<!-- BODY -->
+<body>
+    <h1> Galería de Imagenes </h1>
+
+    <!--Imagenes -->
+
+    <div class="galeria">
+        <img src="Gatito1.webp" id="img-0" data-index="0" class="thumb" alt="Gatito1">
+        <img src="Gatito2.webp" id="img-1" data-index="1" class="thumb" alt="Gatito2">
+        <img src="Gatito3.webp" id="img-2" data-index="2" class="thumb" alt="Gatito3">
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal">
+     <span class="close"> X </span>  <!--SPAN sirve para cerrar el boton-->
+     <img src="img/image1.jpg" alt="imagen_modal" class="imagen_modal">
+     <div class="modal-nav">
+     <button id="prev">Anterior</button>
+      <button id="next">Siguiente</button>
+     </div>
+    </div>
+
+<!-- jQuery -->
+<script src="AE6_ABP-EjercicioIndividual.js"></script>
+
+</body>
+</html>
+

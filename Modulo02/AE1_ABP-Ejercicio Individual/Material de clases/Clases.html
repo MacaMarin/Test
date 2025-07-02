@@ -1,0 +1,254 @@
+<!-- CLASE DE HTML -->
+
+<!-- ¿Que es HTML? -->
+<!-- HTML (HyperText Markup Language) es el lenguaje estándar que se usa para crear y estructurar páginas web -->
+
+<!-- ¿Que es HTML5? -->
+<!-- HTML5 es la versión más reciente. Introduce nuevas etiquetas, atributos y funcionalidades -->
+
+
+<!-- Declara que el documento es HTML5 -->
+<!DOCTYPE html> 
+
+<!-- Inicia el documento HTML y define que el idioma es español -->
+<html lang="es"> 
+
+
+<!-- ¿Que es HEAD? -->
+<!-- Es la parte del HTML donde se pone el título, estilos, fuentes y otros datos que no se ven en la página  -->
+
+<head>
+    
+    <!-- Define la codificación de caracteres como UTF-8 (soporta tildes, ñ, etc.) -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página sea responsiva en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Intro a HTML</title>
+
+    <!-- Vincula una hoja de estilos externa ubicada en la carpeta css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Mejora la carga de fuentes desde Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importa la fuente Roboto desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body> <!-- Comienza el contenido visible de la página -->
+
+    <!-- Títulos de nivel 1 a 6 -->
+    <h1>Título Principal</h1> <!-- h1 es el título más importante -->
+    <h2>Título h2</h2> <!-- h2 es el segundo en jerarquía -->
+    <h3>Título h3</h3> <!-- y así sucesivamente... -->
+    <h4 class="rojo subrayado">Título h4</h4> <!-- h4 con clases CSS aplicadas -->
+    <h5>Título h5</h5>
+    <h6 class="rojo amarillo">Titulo h6</h6> <!-- h6 también tiene clases aplicadas -->
+
+    <!-- Párrafo con énfasis y estilo personalizado -->
+    <p id="parrafo_especial" class="no_border">
+        <em>¡Hola!</em> Bienvenidos a la clase introductoria de <strong>HTML</strong>
+    </p>
+
+    <!-- Otro párrafo con texto de ejemplo -->
+    <p>
+        <strong><em>Lorem</em></strong> ipsum dolor sit amet...
+    </p>
+
+    <!-- Texto en negrita fuera de un párrafo -->
+    <strong>Otro Strong afuera</strong>
+
+    <!-- Contenedor con párrafos anidados -->
+    <div class="contenedor">
+        <p>Este es párrafo hijo</p>
+        <div class="seccion">
+            <p>Este es un párrafo nieto</p>
+        </div>
+        <p>Este es un párrafo hijo también</p>
+    </div>
+
+    <!-- División con bloques para aplicar estilos como tamaños o colores -->
+    <div class="bloque">
+        <div class="pequeno"></div>
+        <div></div> <!-- Sin clase -->
+        <div class="grande">
+            <a href="#">Enlace</a> <!-- Enlace que no lleva a ninguna parte -->
+            <div class="pequeno"></div>
+        </div>
+    </div>
+
+    <!-- División y texto pequeño -->
+    <div class="pequeno"></div>
+    <small class="pequeno">Pequeño</small>
+
+    <!-- Secciones con identificadores únicos -->
+    <section id="seccion1" class="grande"></section>
+    <section id="seccion2" class="grande"></section>
+
+    <!-- Enlace que se abre en una nueva pestaña -->
+    <a href="http://google.com" target="_blank">Haz clic aquí para ir a Google</a>
+
+    <!-- Lista desordenada con viñetas -->
+    <h2>Lista Desordenada</h2>
+    <ul>
+        <li>Fruta</li>
+        <li>Atún</li>
+        <li>Arroz</li>
+        <li>Frijoles</li>
+    </ul>
+
+    <!-- Lista ordenada con números -->
+    <h2>Lista Ordenada</h2>
+    <ol>
+        <li>Friends</li>
+        <li>Breaking Bad</li>
+        <li>Last of Us</li>
+    </ol>
+
+    <!-- Tabla con encabezado, cuerpo y pie -->
+    <h2>Tabla</h2>
+    <table>
+        <thead> <!-- Encabezado de la tabla -->
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+        <tbody> <!-- Cuerpo con datos -->
+            <tr>
+                <td>1</td>
+                <td>Elena</td>
+                <td>De Troya</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Juana</td>
+                <td>De Arco</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- Pie de la tabla -->
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Imagen local (requiere que exista el archivo en carpeta img) -->
+    <img src="img/gatito.jpg" alt="Imagen de Gatito">
+
+    <!-- Imagen externa (viene de internet) -->
+    <img src="https://fotografias-compromiso.atresmedia.com/clipping/cmsimages02/2016/02/26/5659A6D3-EDA9-4B90-BB58-E124E432F1A6/69.jpg" alt="Imagen de Gatito Bonito">
+
+    <!-- Video local que se repite, está sin sonido y tiene controles -->
+    <video src="img/hola_mundo.mp4" controls loop muted></video>
+
+    <!-- Video embebido desde YouTube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-I49d6y6UXk?si=o1pD7mkyDFJnHhoY"
+        title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Formulario con distintos tipos de entrada -->
+    <form action="#" method="POST"> <!-- Simula enviar el formulario al servidor -->
+
+        <!-- Campo de texto con etiqueta -->
+        <div>
+            <label for="texto_nombre">Nombre:</label>
+            <input type="text" id="texto_nombre" name="campo_nombre" maxlength="3" required>
+            <input type="text" placeholder="Escribe aquí algo...">
+        </div>
+
+        <!-- Otros tipos de entradas: número, contraseña, fecha, email -->
+        <div>
+            <label>Edad:</label>
+            <input type="number" name="campo_edad" min="10" max="50">
+            <input type="password" name="contrasena">
+            <input type="date" name="fecha_nacimiento">
+            <input type="email" name="correo">
+        </div>
+
+        <!-- Botones tipo radio (solo uno puede estar seleccionado) -->
+        <div>
+            <input type="radio" name="estado_civil" value="casado" id="input_casado">
+            <label for="input_casado">Casado</label> <br>
+            <input type="radio" name="estado_civil" value="soltero" id="input_soltero">
+            <label for="input_soltero">Soltero</label>
+        </div>
+
+        <!-- Checkbox para aceptar términos -->
+        <div>
+            <input type="checkbox" name="terminos" id="input_terminos">
+            <label for="input_terminos">Acepto términos y condiciones</label>
+        </div>
+
+        <!-- Menús desplegables -->
+        <div>
+            <select name="hobbie">
+                <option value="1">Leer</option>
+                <option value="2">Ver tele</option>
+                <option value="3">Andar en Bici</option>
+            </select>
+            <select name="lenguaje">
+                <option value="py">Python</option>
+                <option value="js">Javascript</option>
+                <option value="mern">MERN</option>
+            </select>
+        </div>
+
+        <!-- Área de texto grande para escribir -->
+        <div>
+            <textarea name="comentario" cols="10" rows="3"></textarea>
+        </div>
+
+        <!-- Botón para enviar el formulario -->
+        <input type="submit" value="Enviar Formulario">
+    </form>
+
+    <!-- Etiquetas semánticas que representan distintas áreas de una página -->
+    <header></header> <!-- Encabezado del sitio -->
+    <nav></nav> <!-- Menú de navegación -->
+    <section></section> <!-- Sección principal -->
+    <aside></aside> <!-- Información adicional o lateral -->
+    <main></main> <!-- Contenido principal -->
+    <article></article> <!-- Contenido independiente, como una noticia -->
+    <footer></footer> <!-- Pie de página -->
+
+    <!-- Pruebas de estilos CSS -->
+    <h3 class="colores">Pruebas de Color</h3>
+    <p class="formato_verde">Lorem ipsum dolor sit amet...</p>
+    <p class="formato_verde">Lorem ipsum dolor sit amet...</p>
+    <a class="formato_verde" href="#">Este es un enlace</a>
+
+    <!-- Texto con un ID para aplicar estilo específico -->
+    <p id="texto">Lorem ipsum dolor sit amet...</p>
+
+    <!-- Divisiones con clase "tamano" -->
+    <div class="tamano"></div>
+    <div class="tamano"></div>
+
+    <!-- Modelo de caja: padding, border, margin -->
+    <div class="modelo_caja">Modelo de Caja</div>
+
+    <!-- Divs en línea (inline) -->
+    <div class="inline">1</div>
+    <div class="inline">2</div>
+    <div class="inline">3</div>
+
+    <!-- Span con clase para ver qué pasa si se comportan como bloque -->
+    <span class="block"></span>
+    <span class="block"></span>
+    <span class="block"></span>
+
+    <!-- Divs con clase inline-block para ver cómo se alinean horizontalmente -->
+    <div id="div1" class="inline-block">1</div>
+    <div id="div2" class="inline-block">2</div>
+    <div id="div3" class="inline-block">3</div>
+
+</body>
+</html>
